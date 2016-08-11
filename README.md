@@ -21,7 +21,7 @@ gem 'mysql2', '~> 0.3.18'
 ```
 
 ### config\database.yml
-```
+```yml
 default: &default
    adapter: mysql2
    database: tripadvisor
@@ -53,7 +53,7 @@ production:
 
 ### Set up database
 
-![]()
+![](https://raw.githubusercontent.com/atabegruslan/RubyOnRails-MVC/master/Illustrations/ROR01.PNG)
 
 ### Command Line
 
@@ -67,7 +67,7 @@ rake db:migrate
 
 ### config\routes.rb
 
-```
+```rb
 Rails.application.routes.draw do
   resources :ratings
 end
@@ -255,7 +255,7 @@ end
 
 ### app\views\ratings\edit.html.erb
 
-```
+```html
 <h1>Editing rating</h1>
 
 <%= render 'form' %>
@@ -272,4 +272,4 @@ end
 rails server
 ```
 
-![]()
+![](https://raw.githubusercontent.com/atabegruslan/RubyOnRails-MVC/master/Illustrations/ROR02.PNG)
