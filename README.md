@@ -75,7 +75,7 @@ end
 
 ### app\controllers\ratings_controller.rb
 
-```
+```rb
 class RatingsController < ApplicationController
   before_action :set_rating, only: [:show, :edit, :update, :destroy]
 
@@ -153,7 +153,7 @@ end
 
 ### app\models\rating.rb
 
-```
+```rb
 class Rating < ActiveRecord::Base
     self.table_name = "all"
 end
@@ -188,7 +188,7 @@ end
 
 ### app\views\ratings\index.html.erb
 
-```
+```html
 <h1>Trip Advisor</h1>
 
 <table class="table">
@@ -221,7 +221,7 @@ end
 
 ### app\views\ratings\show.html.erb
 
-```
+```html
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -245,7 +245,7 @@ end
 
 ### app\views\ratings\new.html.erb
 
-```
+```html
 <h1>New rating</h1>
 
 <%= render 'form' %>
