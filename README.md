@@ -25,7 +25,7 @@ gem 'autoprefixer-rails'
 ```
 
 ### config\database.yml
-```
+```yml
 default: &default
    adapter: mysql2
    database: tripadvisor
@@ -57,7 +57,7 @@ production:
 
 ### Set up database
 
-![]()
+![](https://raw.githubusercontent.com/atabegruslan/RubyOnRails-MVC/master/Illustrations/ROR01.PNG)
 
 ### Command Line
 
@@ -71,7 +71,7 @@ rake db:migrate
 
 ### config\routes.rb
 
-```
+```rb
 Rails.application.routes.draw do
   resources :ratings
 end
@@ -79,7 +79,7 @@ end
 
 ### app\controllers\ratings_controller.rb
 
-```
+```rb
 class RatingsController < ApplicationController
   before_action :set_rating, only: [:show, :edit, :update, :destroy]
 
@@ -157,7 +157,7 @@ end
 
 ### app\models\rating.rb
 
-```
+```rb
 class Rating < ActiveRecord::Base
     self.table_name = "all"
 end
@@ -220,7 +220,7 @@ end
 
 ### app\views\ratings\index.html.erb
 
-```
+```html
 <h1>Trip Advisor</h1>
 
 <table class="table">
@@ -253,7 +253,7 @@ end
 
 ### app\views\ratings\show.html.erb
 
-```
+```html
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -277,7 +277,7 @@ end
 
 ### app\views\ratings\new.html.erb
 
-```
+```html
 <h1>New rating</h1>
 
 <%= render 'form' %>
@@ -287,7 +287,7 @@ end
 
 ### app\views\ratings\edit.html.erb
 
-```
+```html
 <h1>Editing rating</h1>
 
 <%= render 'form' %>
@@ -304,4 +304,4 @@ end
 rails server
 ```
 
-![]()
+![](https://raw.githubusercontent.com/atabegruslan/RubyOnRails-MVC/master/Illustrations/ROR02.PNG)
