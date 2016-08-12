@@ -18,6 +18,10 @@
 source 'http://rubygems.org'
 ...
 gem 'mysql2', '~> 0.3.18'
+
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'autoprefixer-rails'
+
 ```
 
 ### config\database.yml
@@ -159,6 +163,12 @@ class Rating < ActiveRecord::Base
 end
 ```
 
+### app\assets\stylesheets\application.css.sass
+
+```html
+@import "bootstrap"
+```
+
 ### app\views\layouts\application.html.erb
 
 ```html
@@ -169,19 +179,41 @@ end
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css" rel="stylesheet" ></link>
   <style>
     h1{
       text-align: center;
       padding:20px;
+    }
+    a{
+        margin:15px;
+        background-color:white;
+    }
+
+    /* unvisited link */
+    a:link {
+        color: green;
+        background-color:white;
+    }
+    /* visited link */
+    a:visited {
+        color: blue;
+        background-color:white;
+    }
+    /* mouse over link */
+    a:hover {
+        color: black;
+        background-color:gray;
+    }
+    /* selected link */
+    a:active {
+        color: gray;
+        background-color:gray;
     }
   </style>
 </head>
 <body>
 
 <%= yield %>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.js"></script>
 </body>
 </html>
 ```
