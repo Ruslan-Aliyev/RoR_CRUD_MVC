@@ -57,7 +57,7 @@ production:
 
 ### Set up database
 
-![](https://raw.githubusercontent.com/atabegruslan/RubyOnRails-MVC/master/Illustrations/ROR01.PNG)
+![](https://raw.githubusercontent.com/Ruslan-Aliyev/RubyOnRails-MVC/master/Illustrations/ROR01.PNG)
 
 ### Command Line
 
@@ -304,4 +304,4 @@ end
 rails server
 ```
 
-![](https://raw.githubusercontent.com/atabegruslan/RubyOnRails-MVC/master/Illustrations/ROR02.PNG)
+![](https://raw.githubusercontent.com/Ruslan-Aliyev/RubyOnRails-MVC/master/Illustrations/ROR02.PNG)
